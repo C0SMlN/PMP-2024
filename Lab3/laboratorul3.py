@@ -1,7 +1,19 @@
 from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.inference import VariableElimination
+import matplotlib.pyplot as plt
+import numpy as np
 
+# Sample plot
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.plot(x, y)
+plt.title("Sine Wave Example")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+
+plt.show()
 model = BayesianNetwork([('S', 'O'), ('S', 'L'), ('S', 'M'), ('L', 'M')])
 
 cpd_O = TabularCPD(variable='O', variable_card=2,

@@ -1,0 +1,25 @@
+n = nr total de clienti care viziteaza magazinul
+y = numarul de clienti care au cumparat produsul
+y -> distr binomioala cu n si TETA
+TETA = probabilitatea ca un client sa cumpere produsul
+a priori Poisson pt n (param de medie de 10)
+
+
+Efectul lui Y asupra distr a posteriori:
+- Pe masura ce Y creste, distr a posteriori pt n va tinde sa se deplaseze catre valori mai mari de n (un numar mai mare de clienti care au cumparat
+produsul sugereaza ca mai multi clienti au vizitat magazinul in ac zi)
+- daca Y este mic, distributia a posteriori pt n va ramane in jurul val implicite din distributia a priori, dar se va deplasa catre valori mai mici de n 
+(mai putini clienti au vizitat magazinul)
+
+
+Efectul lui Theta asupra distributiei a posteriori:
+- cresterea lui theta => daca proibabilitatea theta este mai mare, atunci este mai probabil ca un nr dat de cumparatori Y sa provina de la un nr mai mic de 
+cumparatori. Distributia a posteriori pt n se va concentra mai aproape de valorile mai mici
+- scaderea lui theta => daca theta este mic, atunci va explica un Y mai mare (pt ca e nevoie de mai multi clienti daca mai putini cumpara), deci va deplasa
+distr a posteriori catre valori mai mari de n
+
+
+Un Y mai mare implică o creștere a valorilor așteptate pentru n.
+
+O probabilitate theta mai mare implica o distributie a posteriori mai concentrată pe valori mai mici de n, în timp ce un theta mai mic duce la o
+ distributie a posteriori orientată către valori mai mari pentru n.

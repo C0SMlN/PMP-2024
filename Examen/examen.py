@@ -58,6 +58,3 @@ with pm.Model() as model2:
 decision_boundary = -(trace2.posterior['beta_1x'].mean() / trace2.posterior['beta_3x'].mean())
 print(f"Granița de decizie (medie): {decision_boundary:.2f}")
 
-
-
-
